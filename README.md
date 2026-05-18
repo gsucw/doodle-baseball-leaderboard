@@ -15,17 +15,17 @@ You can see this leaderboard system fully integrated and working in real-time on
 This repository utilizes high-performance, real-time gaming API endpoints to fetch score data sorted by different time frames. You are free to use these endpoints for your own non-commercial fan projects:
 
 ### 1. All-Time Global Leaderboard
-*   **URL:** `[https://api.pipsnythints.com/api/doodleBaseball/getLeaderBoard?type=1](https://api.pipsnythints.com/api/doodleBaseball/getLeaderBoard?type=1)`
+*   **URL:** `[https://api.doodle-baseball.cc/api/doodleBaseball/getLeaderBoard?type=1](https://api.doodle-baseball.cc/api/doodleBaseball/getLeaderBoard?type=1)`
 *   **Method:** `GET`
 *   **Description:** Fetches the all-time highest streaks (Home Runs) recorded since the launch.
 
 ### 2. Weekly Leaderboard
-*   **URL:** `[https://api.pipsnythints.com/api/doodleBaseball/getWeeklyBoard?type=1](https://api.pipsnythints.com/api/doodleBaseball/getWeeklyBoard?type=1)`
+*   **URL:** `[https://api.doodle-baseball.cc/api/doodleBaseball/getWeeklyBoard?type=1](https://api.doodle-baseball.cc/api/doodleBaseball/getWeeklyBoard?type=1)`
 *   **Method:** `GET`
 *   **Description:** Fetches the top scoring players for the current calendar week. Resets every Sunday.
 
 ### 3. Daily Leaderboard
-*   **URL:** `[https://api.pipsnythints.com/api/doodleBaseball/getDailyBoard?type=1](https://api.pipsnythints.com/api/doodleBaseball/getDailyBoard?type=1)`
+*   **URL:** `[https://api.doodle-baseball.cc/api/doodleBaseball/getDailyBoard?type=1](https://api.doodle-baseball.cc/api/doodleBaseball/getDailyBoard?type=1)`
 *   **Method:** `GET`
 *   **Description:** Fetches today's top batters. Perfect for tracking active daily tournaments.
 
@@ -38,9 +38,9 @@ You can easily render these leaderboards in your web app using the standard Java
 ```javascript
 // Example: Fetching the Leaderboard Data
 const API_URLS = {
-    alltime: 'https://api.pipsnythints.com/api/doodleBaseball/getLeaderBoard?type=1',
-    weekly: 'https://api.pipsnythints.com/api/doodleBaseball/getWeeklyBoard?type=1',
-    daily: 'https://api.pipsnythints.com/api/doodleBaseball/getDailyBoard?type=1'
+    alltime: 'https://api.doodle-baseball.cc/api/doodleBaseball/getLeaderBoard?type=1',
+    weekly: 'https://api.doodle-baseball.cc/api/doodleBaseball/getWeeklyBoard?type=1',
+    daily: 'https://api.doodle-baseball.cc/api/doodleBaseball/getDailyBoard?type=1'
 };
 
 async function loadLeaderboard(type) {
